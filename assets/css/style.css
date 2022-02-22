@@ -103,6 +103,10 @@ header ul li {
   border-left: 5px solid #445877;
 }
 
+.about-p1 {
+  margin-bottom: 20px;
+}
+
 /* WORK */
 
 .work {
@@ -148,6 +152,12 @@ header ul li {
 .img-sm,
 .img-lg {
   border: 7px solid #92ccce;
+}
+
+.img-lg:hover,
+.img-sm:hover {
+  background-color: white;
+  opacity: 70%;
 }
 
 .work-subtitle-container {

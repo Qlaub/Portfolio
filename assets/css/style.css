@@ -103,7 +103,7 @@ header ul li {
 .contact {
   display: flex;
   justify-content: space-around;
-  margin: 30px 100px 10px 120px;
+  margin: 30px 100px 10px 100px;
   flex-wrap: wrap;
 }
 
@@ -152,12 +152,12 @@ address {
 .img-sm,
 .img-lg {
   border: 7px solid #92ccce;
+  opacity: 70%;
 }
 
 .img-lg:hover,
 .img-sm:hover {
-  background-color: white;
-  opacity: 70%;
+  opacity: 100%;
 }
 
 .run-buddy {
@@ -213,6 +213,10 @@ address {
   margin-bottom: 30px;
 }
 
+address {
+  padding-right: 40px;
+}
+
 address ul {
   display: flex;
   list-style: none;
@@ -230,7 +234,7 @@ address ul li a,
 .desktop-tel {
   font-style: normal;
   color: #31353d;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 /*******************/

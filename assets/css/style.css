@@ -1,4 +1,6 @@
+/********/
 /* PAGE */
+/********/
 
 * {
   box-sizing: border-box;
@@ -15,7 +17,9 @@ a {
   text-decoration: none;
 }
 
+/**********/
 /* HEADER */
+/**********/
 
 header {
   background-color: #31353d;
@@ -40,7 +44,7 @@ header a {
 header ul {
   display: flex;
   list-style: none;
-  margin: 26px 80px 0 0;
+  margin: 26px 100px 0 0;
 }
 
 header ul li {
@@ -49,7 +53,9 @@ header ul li {
   margin: 10px;
 }
 
+/********/
 /* HERO */
+/********/
 
 .hero {
   background-image: url(../images/hero-edit.jpg);
@@ -76,24 +82,33 @@ header ul li {
   border-top: 2px solid #92ccce;
 }
 
-/* ABOUT ME */
+/******************************/
+/* ABOUT ME, WORK, CONTACT ME */
+/******************************/
 
-.about {
-  display: flex;
-  justify-content: space-around;
-  margin: 30px 90px 10px 140px;
-  flex-wrap: wrap;
-}
+/* SHARED */
 
-.about h2 {
+.work h2,
+.about h2,
+.contact h2 {
   flex: .5 200px;
   color: #445877;
   font-size: 54px;
   text-align: right;
-  padding: 6px 16px 80px 0;
+  padding: 6px 16px 0 0;
 }
 
-.about-text {
+.about,
+.work,
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 100px 10px 100px;
+  flex-wrap: wrap;
+}
+
+.about-text,
+address {
   flex: 15;
   color: #445877;
   font-size: 20px;
@@ -103,26 +118,13 @@ header ul li {
   border-left: 5px solid #445877;
 }
 
+/* ABOUT ME */
+
 .about-p1 {
   margin-bottom: 20px;
 }
 
 /* WORK */
-
-.work {
-  display: flex;
-  justify-content: space-around;
-  margin: 30px 90px 10px 140px;
-  flex-wrap: wrap;
-}
-
-.work h2 {
-  flex: .5 200px;
-  color: #445877;
-  font-size: 54px;
-  text-align: right;
-  padding: 6px 16px 80px 0;
-}
 
 .work-images {
   flex: 15;
@@ -139,25 +141,43 @@ header ul li {
   height: 650px;
   width: 100%;
   margin-bottom: 10px;
-  background-image: url(../images/hero.jpg)
 }
 
 .img-sm {
   height: 200px;
   width: 49%;
   margin: 10px 0;
-  background-image: url(../images/hero.jpg);
 }
 
 .img-sm,
 .img-lg {
   border: 7px solid #92ccce;
+  opacity: 70%;
 }
 
 .img-lg:hover,
 .img-sm:hover {
-  background-color: white;
-  opacity: 70%;
+  opacity: 100%;
+}
+
+.run-buddy {
+  background-image: url(../images/run-buddy.png);
+}
+
+.horiseon {
+  background-image: url(../images/horiseon.png);
+}
+
+.portfolio-git {
+  background-image: url(../images/portfolio-git.png);
+}
+
+.neural-net {
+  background-image: url(../images/neural-net.png);
+}
+
+.tbd {
+  background-image: url(../images/hero.jpg);
 }
 
 .work-subtitle-container {
@@ -185,62 +205,55 @@ header ul li {
 
 /* CONTACT ME */
 
+.mobile-tel {
+  display: none;
+}
+
 .contact {
-  display: flex;
-  justify-content: space-around;
-  margin: 30px 90px 10px 140px;
-  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-
-.contact h2 {
-  flex: .5 200px;
-  color: #445877;
-  font-size: 54px;
-  text-align: right;
-  padding: 6px 16px 0 0;
-}
-
-/* CONTACT ME */
 
 address {
-  flex: 15;
-  color: #445877;
-  font-size: 20px;
-  line-height: 1.5;
-  padding-left: 40px;
-  width: 70%;
-  border-left: 5px solid #445877;
+  padding-right: 40px;
 }
 
 address ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
-address ul li {
+address ul li,
+.desktop-tel {
   padding: 0 3px;
   border-bottom: 5px solid #31353d;
 }
 
-address ul li a {
+address ul li a,
+.desktop-tel {
   font-style: normal;
   color: #31353d;
-  font-size: 24px;
+  font-size: 23px;
 }
 
+/*******************/
 /* UTILITY CLASSES */
+/*******************/
 
 .margin-right {
   margin-right: 10px;
 }
 
+/*****************/
 /* MEDIA QUERIES */
+/*****************/
 
 @media only screen and (max-width: 1085px) {
 
+  /**********/
   /* HEADER */
+  /**********/
 
   header {
     background-color: #31353d;
@@ -280,7 +293,9 @@ address ul li a {
     margin: 10px;
   }
 
+  /********/
   /* HERO */
+  /********/
 
   .hero {
     height: 12%;
@@ -292,7 +307,7 @@ address ul li a {
   }
 
   .hero h2 {
-    font-size: 36px;
+    font-size: 28px;
     width: 70%;
     line-height: 1.8;
     text-align: center;
@@ -304,9 +319,15 @@ address ul li a {
     border-top: 8px solid #92ccce;
   }
 
-  /* ABOUT ME*/
+  /******************************/
+  /* ABOUT ME, WORK, CONTACT ME */
+  /******************************/
 
-  .about {
+  /* SHARED */
+
+  .about,
+  .work,
+  .contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,42 +335,33 @@ address ul li a {
     flex-direction: column;
   }
 
-  .about h2 {
+  .about h2,
+  .work h2,
+  .contact h2 {
     flex: 0;
     width: 70%;
-    font-size: 68px;
+    font-size: 56px;
     text-align: center;
     padding: 60px 20px 10px 20px;
     border-bottom: 10px solid #445877;
   }
 
-  .about-text {
+  .about-text,
+  address {
     flex: 0;
-    padding: 0 40px 0 40px;
+    padding: 0 10px 0 10px;
     width: 100%;
     border: none;
+  }
+
+  /* ABOUT ME */
+
+  .about-text {
     margin: 50px 0 0 0;
     font-size: 26px;
   }
 
   /* WORK */
-  
-  .work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
-  }
-  
-  .work h2 {
-    flex: 0;
-    width: 70%;
-    font-size: 68px;
-    text-align: center;
-    padding: 60px 20px 10px 20px;
-    border-bottom: 10px solid #445877;
-  }
 
   .work-images {
     flex: 0;
@@ -370,29 +382,20 @@ address ul li a {
 
   /* CONTACT ME */
 
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
+  .mobile-tel {
+    display: inline-block;
   }
-  
+
+  .desktop-tel {
+    display: none;
+  }
+
   .contact h2 {
-    flex: 0;
-    width: 70%;
-    font-size: 68px;
-    text-align: center;
-    padding: 60px 20px 10px 10px;
-    border-bottom: 10px solid #445877;
+    padding-top: 30px;
   }
 
   address {
-    flex: 0;
-    padding: 0 20px 0 20px;
-    width: 100%;
-    border: none;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
   }
 
   address ul {

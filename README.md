@@ -1,7 +1,7 @@
 # [My Web Portfolio](https://qlaub.github.io/Portfolio/)
 
 ## Purpose
-A central place for my bio, deployed applications, contact information, and resume.
+A website serving as a central place for my bio, applications, contact information, and resume.
 
 ## Optimized for Mobile
 This website has been optimized for mobile viewing using media queries. Reduce browser width to 1085 pixels and under to experience the mobile website.

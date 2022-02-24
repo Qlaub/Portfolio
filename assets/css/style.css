@@ -139,13 +139,31 @@ header ul li {
   height: 650px;
   width: 100%;
   margin-bottom: 10px;
-  background-image: url(../images/hero.jpg)
 }
 
 .img-sm {
   height: 200px;
   width: 49%;
   margin: 10px 0;
+}
+
+.run-buddy {
+  background-image: url(../images/run-buddy.png);
+}
+
+.horiseon {
+  background-image: url(../images/horiseon.png);
+}
+
+.portfolio-git {
+  background-image: url(../images/portfolio-git.png);
+}
+
+.neural-net {
+  background-image: url(../images/neural-net.png);
+}
+
+.tbd {
   background-image: url(../images/hero.jpg);
 }
 
@@ -185,10 +203,14 @@ header ul li {
 
 /* CONTACT ME */
 
+.mobile-tel {
+  display: none;
+}
+
 .contact {
   display: flex;
   justify-content: space-around;
-  margin: 30px 90px 10px 140px;
+  margin: 30px 90px 30px 140px;
   flex-wrap: wrap;
 }
 
@@ -199,8 +221,6 @@ header ul li {
   text-align: right;
   padding: 6px 16px 0 0;
 }
-
-/* CONTACT ME */
 
 address {
   flex: 15;
@@ -216,15 +236,17 @@ address ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
-address ul li {
+address ul li,
+.desktop-tel {
   padding: 0 3px;
   border-bottom: 5px solid #31353d;
 }
 
-address ul li a {
+address ul li a,
+.desktop-tel {
   font-style: normal;
   color: #31353d;
   font-size: 24px;
@@ -292,7 +314,7 @@ address ul li a {
   }
 
   .hero h2 {
-    font-size: 36px;
+    font-size: 28px;
     width: 70%;
     line-height: 1.8;
     text-align: center;
@@ -317,7 +339,7 @@ address ul li a {
   .about h2 {
     flex: 0;
     width: 70%;
-    font-size: 68px;
+    font-size: 56px;
     text-align: center;
     padding: 60px 20px 10px 20px;
     border-bottom: 10px solid #445877;
@@ -345,7 +367,7 @@ address ul li a {
   .work h2 {
     flex: 0;
     width: 70%;
-    font-size: 68px;
+    font-size: 56px;
     text-align: center;
     padding: 60px 20px 10px 20px;
     border-bottom: 10px solid #445877;
@@ -370,6 +392,14 @@ address ul li a {
 
   /* CONTACT ME */
 
+  .mobile-tel {
+    display: inline-block;
+  }
+
+  .desktop-tel {
+    display: none;
+  }
+
   .contact {
     display: flex;
     justify-content: center;
@@ -381,9 +411,9 @@ address ul li a {
   .contact h2 {
     flex: 0;
     width: 70%;
-    font-size: 68px;
+    font-size: 56px;
     text-align: center;
-    padding: 60px 20px 10px 10px;
+    padding: 30px 10px 20px 10px;
     border-bottom: 10px solid #445877;
   }
 
@@ -392,7 +422,7 @@ address ul li a {
     padding: 0 20px 0 20px;
     width: 100%;
     border: none;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
   }
 
   address ul {

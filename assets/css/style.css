@@ -152,32 +152,49 @@ address {
 .img-sm,
 .img-lg {
   border: 7px solid #92ccce;
-  opacity: 70%;
+  position: relative;
 }
 
-.img-lg:hover,
-.img-sm:hover {
-  opacity: 100%;
+.run-buddy::before,
+.horiseon::before,
+.portfolio-git::before,
+.neural-net::before,
+.tbd::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 60%;
+  content: "";
 }
 
-.run-buddy {
+.run-buddy::before {    
   background-image: url(../images/run-buddy.png);
 }
 
-.horiseon {
+.horiseon::before {    
   background-image: url(../images/horiseon.png);
 }
 
-.portfolio-git {
+.portfolio-git::before {    
   background-image: url(../images/portfolio-git.png);
 }
 
-.neural-net {
+.neural-net::before {    
   background-image: url(../images/neural-net.png);
 }
 
-.tbd {
+.tbd::before {    
   background-image: url(../images/hero.jpg);
+}
+
+.run-buddy:hover::before,
+.horiseon:hover::before,
+.portfolio-git:hover::before,
+.neural-net:hover::before,
+.tbd:hover::before {
+  opacity: 100%;
 }
 
 .work-subtitle-container {
@@ -185,6 +202,7 @@ address {
   align-items: flex-end;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .img-text {
@@ -192,6 +210,7 @@ address {
   color: #31353d;
   padding: 7px 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .img-text h3 {

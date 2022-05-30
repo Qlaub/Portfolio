@@ -159,7 +159,8 @@ address {
 .horiseon::before,
 .portfolio-git::before,
 .neural-net::before,
-.tbd::before {
+.tbd::before,
+.potluck::before {
   position: absolute;
   inset: 0;
   opacity: 60%;
@@ -186,11 +187,16 @@ address {
   background-image: url(../images/hero.jpg);
 }
 
+.potluck::before {
+  background-image: url(../images/potluck.png);
+}
+
 .run-buddy:hover::before,
 .horiseon:hover::before,
 .portfolio-git:hover::before,
 .neural-net:hover::before,
-.tbd:hover::before {
+.tbd:hover::before,
+.potluck:hover::before {
   opacity: 100%;
 }
 
